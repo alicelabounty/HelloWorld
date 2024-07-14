@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://blopoi6yt5gph"]
+
+[ext_resource type="PackedScene" uid="uid://cvfvxdv2wfl8l" path="res://Player/player.tscn" id="1_rhwcf"]
+[ext_resource type="Script" path="res://Scripts/Player2.gd" id="2_nn5op"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rhwcf")]
+position = Vector2(68, 252)
+
+[node name="Player2" parent="." instance=ExtResource("1_rhwcf")]
+position = Vector2(252, 252)
+script = ExtResource("2_nn5op")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(8, 263)
+scale = Vector2(2.15179, 1)
+polygon = PackedVector2Array(0, 0, 141.278, 0, 141.278, 16, 0, 16)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+position = Vector2(92, 208)
+scale = Vector2(2.15179, 1)
+polygon = PackedVector2Array(0, 0, 63, 0, 63, 16, 0, 16)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D3"]
+position = Vector2(18, 4)
+rotation = 1.57219
+scale = Vector2(4.36984, 1)
+polygon = PackedVector2Array(0, 0, 62.9313, -0.383272, 62.9367, 16.6167, 0.00542199, 17)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D4"]
+position = Vector2(320, 4)
+rotation = 1.57219
+scale = Vector2(4.36984, 1)
+polygon = PackedVector2Array(0, 0, 62.9313, -0.383272, 62.9367, 16.6167, 0.00542199, 17)
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D5"]
+position = Vector2(10, 4)
+scale = Vector2(2.15179, 1)
+polygon = PackedVector2Array(0, 0, 141.278, 0, 141.278, 16, 0, 16)
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D6"]
+position = Vector2(128, 128)
+scale = Vector2(2.15179, 1)
+polygon = PackedVector2Array(0, 0, 63, 0, 62.7385, 28, -7.62939e-06, 12)
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D7"]
+position = Vector2(55, 94)
+scale = Vector2(2.15179, 1)
+polygon = PackedVector2Array(4.18256, -16, 18.5892, -16, 18.5892, 18, 4.18256, 18)
